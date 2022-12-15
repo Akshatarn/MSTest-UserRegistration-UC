@@ -12,7 +12,7 @@ namespace MSTestUserRegistration
         {
             Console.WriteLine("User Registration using Regex.\n");
             string userInput = "Abc";
-            UserDetails.PassMin8CharAnd1UpperCase(userInput);
+            UserDetails.UpperCase1AndNumeric1(userInput);
         }
     }
 }
