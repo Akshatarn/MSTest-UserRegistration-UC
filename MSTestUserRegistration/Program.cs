@@ -12,7 +12,7 @@ namespace MSTestUserRegistration
         {
             Console.WriteLine("User Registration using Regex.\n");
             string userInput = "Abc";
-            UserDetails.SpecialCharacter1(userInput);
+            UserDetails.EmailSample(userInput);
         }
     }
 }
