@@ -15,7 +15,7 @@ namespace RegexMSTest
             //string userInput = "Abc";
 
             //Act
-            bool output = UserDetails.FirstName(userInput);
+            bool output = UserDetails.LastName(userInput);
 
             //Assert
             Assert.AreEqual(output, true);
