@@ -5,21 +5,20 @@ namespace RegexMSTest
     public class UnitTest1
     {
         [TestMethod]
-        [DataRow("Abc")]
-        [DataRow("Abcd")]
-        [DataRow("Ab")]
-        [DataRow("abc")]
+        [DataRow("abc@bl.com")]    //pass
+        [DataRow("abc.xyz@bl.co.in")]   //pass
+        [DataRow("abc123@gmail.a")]     //fail
+        [DataRow("abc.@gmail.com")]    //fail
         public void TestFirstName(string userInput)
         {
             //Arrange
             //string userInput = "Abc";
 
             //Act
-            bool output = UserDetails.LastName(userInput);
+            bool output = UserDetails.EmailId(userInput);      //UC3 Email ID testing .
 
             //Assert
             Assert.AreEqual(output, true);
-
         }
     }
 }
