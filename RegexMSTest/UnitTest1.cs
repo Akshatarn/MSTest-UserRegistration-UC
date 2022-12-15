@@ -15,7 +15,7 @@ namespace RegexMSTest
             //string userInput = "Abc";
 
             //Act
-            bool output = UserDetails.UpperCase1AndNumeric1(userInput);   
+            bool output = UserDetails.SpecialCharacter1(userInput);   
 
             //Assert
             Assert.AreEqual(output, true);

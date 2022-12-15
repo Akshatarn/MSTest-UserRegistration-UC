@@ -107,5 +107,19 @@ namespace MSTestUserRegistration
                 return false;
             }
         }
+        public static bool SpecialCharacter1(string userInput)
+        {
+            string regexCondition = "(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[#?!@$%^&*-]).{8,}$";
+            if (Regex.IsMatch(userInput, regexCondition))
+            {
+                Console.WriteLine("Validated successfully!\n");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Entered Details are not in required format.Please try again!\n");
+                return false;
+            }
+        }
     }
 }
