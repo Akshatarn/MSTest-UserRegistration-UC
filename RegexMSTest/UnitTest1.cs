@@ -15,7 +15,7 @@ namespace RegexMSTest
             //string userInput = "Abc";
 
             //Act
-            bool output = UserDetails.PassMin8Char(userInput);   
+            bool output = UserDetails.PassMin8CharAnd1UpperCase(userInput);   
 
             //Assert
             Assert.AreEqual(output, true);
